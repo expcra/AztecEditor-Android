@@ -343,61 +343,61 @@ open class AztecText : AppCompatEditText, TextWatcher, UnknownHtmlSpan.OnUnknown
         val styles = context.obtainStyledAttributes(attrs, R.styleable.AztecText, 0, R.style.AztecTextStyle)
         setLineSpacing(
                 styles.getDimension(
-                        R.styleable.AztecText_lineSpacingExtra,
+                        R.styleable.AztecText_azt_lineSpacingExtra,
                         resources.getDimension(R.dimen.spacing_extra)
                 ),
                 styles.getFloat(
-                        R.styleable.AztecText_lineSpacingMultiplier,
+                        R.styleable.AztecText_azt_lineSpacingMultiplier,
                         resources.getString(R.dimen.spacing_multiplier).toFloat()
                 )
         )
-        setBackgroundColor(styles.getColor(R.styleable.AztecText_backgroundColor, ContextCompat.getColor(context, R.color.background)))
-        setTextColor(styles.getColor(R.styleable.AztecText_textColor, ContextCompat.getColor(context, R.color.text)))
-        setHintTextColor(styles.getColor(R.styleable.AztecText_textColorHint, ContextCompat.getColor(context, R.color.text_hint)))
+        setBackgroundColor(styles.getColor(R.styleable.AztecText_azt_backgroundColor, ContextCompat.getColor(context, R.color.background)))
+        setTextColor(styles.getColor(R.styleable.AztecText_azt_textColor, ContextCompat.getColor(context, R.color.text)))
+        setHintTextColor(styles.getColor(R.styleable.AztecText_azt_textColorHint, ContextCompat.getColor(context, R.color.text_hint)))
 
-        drawableLoading = styles.getResourceId(R.styleable.AztecText_drawableLoading, R.drawable.ic_image_loading)
-        drawableFailed = styles.getResourceId(R.styleable.AztecText_drawableFailed, R.drawable.ic_image_failed)
+        drawableLoading = styles.getResourceId(R.styleable.AztecText_azt_drawableLoading, R.drawable.ic_image_loading)
+        drawableFailed = styles.getResourceId(R.styleable.AztecText_azt_drawableFailed, R.drawable.ic_image_failed)
 
-        historyEnable = styles.getBoolean(R.styleable.AztecText_historyEnable, historyEnable)
-        historySize = styles.getInt(R.styleable.AztecText_historySize, historySize)
+        historyEnable = styles.getBoolean(R.styleable.AztecText_azt_historyEnable, historyEnable)
+        historySize = styles.getInt(R.styleable.AztecText_azt_historySize, historySize)
 
-        commentsVisible = styles.getBoolean(R.styleable.AztecText_commentsVisible, commentsVisible)
+        commentsVisible = styles.getBoolean(R.styleable.AztecText_azt_commentsVisible, commentsVisible)
 
-        verticalParagraphMargin = styles.getDimensionPixelSize(R.styleable.AztecText_blockVerticalPadding, 0)
+        verticalParagraphMargin = styles.getDimensionPixelSize(R.styleable.AztecText_azt_blockVerticalPadding, 0)
 
         inlineFormatter = InlineFormatter(this,
                 InlineFormatter.CodeStyle(
-                        styles.getColor(R.styleable.AztecText_codeBackground, 0),
-                        styles.getFraction(R.styleable.AztecText_codeBackgroundAlpha, 1, 1, 0f),
-                        styles.getColor(R.styleable.AztecText_codeColor, 0)))
+                        styles.getColor(R.styleable.AztecText_azt_codeBackground, 0),
+                        styles.getFraction(R.styleable.AztecText_azt_codeBackgroundAlpha, 1, 1, 0f),
+                        styles.getColor(R.styleable.AztecText_azt_codeColor, 0)))
 
         blockFormatter = BlockFormatter(this,
                 BlockFormatter.ListStyle(
-                        styles.getColor(R.styleable.AztecText_bulletColor, 0),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_bulletMargin, 0),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_bulletPadding, 0),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_bulletWidth, 0),
+                        styles.getColor(R.styleable.AztecText_azt_bulletColor, 0),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_bulletMargin, 0),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_bulletPadding, 0),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_bulletWidth, 0),
                         verticalParagraphMargin),
                 BlockFormatter.QuoteStyle(
-                        styles.getColor(R.styleable.AztecText_quoteBackground, 0),
-                        styles.getColor(R.styleable.AztecText_quoteColor, 0),
-                        styles.getFraction(R.styleable.AztecText_quoteBackgroundAlpha, 1, 1, 0f),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_quoteMargin, 0),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_quotePadding, 0),
-                        styles.getDimensionPixelSize(R.styleable.AztecText_quoteWidth, 0),
+                        styles.getColor(R.styleable.AztecText_azt_quoteBackground, 0),
+                        styles.getColor(R.styleable.AztecText_azt_quoteColor, 0),
+                        styles.getFraction(R.styleable.AztecText_azt_quoteBackgroundAlpha, 1, 1, 0f),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_quoteMargin, 0),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_quotePadding, 0),
+                        styles.getDimensionPixelSize(R.styleable.AztecText_azt_quoteWidth, 0),
                         verticalParagraphMargin),
                 BlockFormatter.HeaderStyle(
                         verticalParagraphMargin),
                 BlockFormatter.PreformatStyle(
-                        styles.getColor(R.styleable.AztecText_preformatBackground, 0),
-                        styles.getFraction(R.styleable.AztecText_preformatBackgroundAlpha, 1, 1, 0f),
-                        styles.getColor(R.styleable.AztecText_preformatColor, 0),
+                        styles.getColor(R.styleable.AztecText_azt_preformatBackground, 0),
+                        styles.getFraction(R.styleable.AztecText_azt_preformatBackgroundAlpha, 1, 1, 0f),
+                        styles.getColor(R.styleable.AztecText_azt_preformatColor, 0),
                         verticalParagraphMargin)
         )
 
         linkFormatter = LinkFormatter(this, LinkFormatter.LinkStyle(styles.getColor(
-                R.styleable.AztecText_linkColor, 0),
-                styles.getBoolean(R.styleable.AztecText_linkUnderline, true)))
+                R.styleable.AztecText_azt_linkColor, 0),
+                styles.getBoolean(R.styleable.AztecText_azt_linkUnderline, true)))
 
         lineBlockFormatter = LineBlockFormatter(this)
 

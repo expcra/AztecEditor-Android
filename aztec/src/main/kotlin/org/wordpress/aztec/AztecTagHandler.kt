@@ -55,7 +55,7 @@ class AztecTagHandler(val context: Context, val plugins: List<IAztecPlugin> = Ar
 
     init {
         val styles = context.obtainStyledAttributes(R.styleable.AztecText)
-        loadingDrawable = ContextCompat.getDrawable(context, styles.getResourceId(R.styleable.AztecText_drawableLoading, R.drawable.ic_image_loading))!!
+        loadingDrawable = ContextCompat.getDrawable(context, styles.getResourceId(R.styleable.AztecText_azt_drawableLoading, R.drawable.ic_image_loading))!!
         styles.recycle()
     }
 

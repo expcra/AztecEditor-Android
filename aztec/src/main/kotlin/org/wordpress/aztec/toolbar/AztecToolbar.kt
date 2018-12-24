@@ -395,8 +395,8 @@ class AztecToolbar : FrameLayout, IAztecToolbar, OnMenuItemClickListener {
 
     private fun initView(attrs: AttributeSet?) {
         val styles = context.obtainStyledAttributes(attrs, R.styleable.AztecToolbar, 0, R.style.AztecToolbarStyle)
-        isAdvanced = styles.getBoolean(R.styleable.AztecToolbar_advanced, false)
-        isMediaToolbarAvailable = styles.getBoolean(R.styleable.AztecToolbar_mediaToolbarAvailable, true)
+        isAdvanced = styles.getBoolean(R.styleable.AztecToolbar_azt_advanced, false)
+        isMediaToolbarAvailable = styles.getBoolean(R.styleable.AztecToolbar_azt_mediaToolbarAvailable, true)
         styles.recycle()
 
         val layout = if (isAdvanced) R.layout.aztec_format_bar_advanced else R.layout.aztec_format_bar_basic

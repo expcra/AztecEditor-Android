@@ -17,7 +17,7 @@
         android:scrollbars="vertical"
         android:scrollbarStyle="outsideOverlay"
         android:textSize="@dimen/text_dialog"
-        aztec:codeDialog="true" >
+        aztec:azt_codeDialog="true" >
     </org.wordpress.aztec.source.SourceViewEditText>
 
 </ScrollView>

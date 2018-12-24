@@ -62,14 +62,14 @@ open class SourceViewEditText : android.support.v7.widget.AppCompatEditText, Tex
     private fun init(attrs: AttributeSet?) {
         val values = context.obtainStyledAttributes(attrs, R.styleable.SourceViewEditText)
 
-        setBackgroundColor(values.getColor(R.styleable.SourceViewEditText_codeBackgroundColor, ContextCompat.getColor(context, android.R.color.transparent)))
+        setBackgroundColor(values.getColor(R.styleable.SourceViewEditText_azt_codeBackgroundColor, ContextCompat.getColor(context, android.R.color.transparent)))
 
-        if (!values.hasValue(R.styleable.SourceViewEditText_codeDialog) && values.getBoolean(R.styleable.SourceViewEditText_codeDialog, false)) {
-            setTextColor(values.getColor(R.styleable.SourceViewEditText_codeTextColor, android.R.attr.textColorPrimary))
+        if (!values.hasValue(R.styleable.SourceViewEditText_azt_codeDialog) && values.getBoolean(R.styleable.SourceViewEditText_azt_codeDialog, false)) {
+            setTextColor(values.getColor(R.styleable.SourceViewEditText_azt_codeTextColor, android.R.attr.textColorPrimary))
         }
 
-        tagColor = values.getColor(R.styleable.SourceViewEditText_tagColor, tagColor)
-        attributeColor = values.getColor(R.styleable.SourceViewEditText_attributeColor, attributeColor)
+        tagColor = values.getColor(R.styleable.SourceViewEditText_azt_tagColor, tagColor)
+        attributeColor = values.getColor(R.styleable.SourceViewEditText_azt_attributeColor, attributeColor)
 
         styleTextWatcher = HtmlStyleTextWatcher(tagColor, attributeColor)
 
