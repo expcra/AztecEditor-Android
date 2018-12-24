@@ -3,48 +3,48 @@
 <resources>
 
     <declare-styleable name="AztecText">
-        <attr name="backgroundColor" format="reference|color" />
-        <attr name="blockVerticalPadding" format="reference|dimension" />
-        <attr name="bulletColor" format="reference|color" />
-        <attr name="bulletMargin" format="reference|dimension" />
-        <attr name="bulletPadding" format="reference|dimension" />
-        <attr name="bulletWidth" format="reference|dimension" />
-        <attr name="codeBackground" format="reference|color" />
-        <attr name="codeBackgroundAlpha" format="reference|fraction" />
-        <attr name="codeColor" format="reference|color" />
-        <attr name="drawableFailed" format="reference" />
-        <attr name="drawableLoading" format="reference" />
-        <attr name="historyEnable" format="reference|boolean" />
-        <attr name="commentsVisible" format="reference|boolean" />
-        <attr name="historySize" format="reference|integer" />
-        <attr name="lineSpacingExtra" format="reference|dimension" />
-        <attr name="lineSpacingMultiplier" format="reference|float" />
-        <attr name="linkColor" format="reference|color" />
-        <attr name="linkUnderline" format="reference|boolean" />
-        <attr name="preformatBackground" format="reference|color" />
-        <attr name="preformatBackgroundAlpha" format="reference|fraction" />
-        <attr name="preformatColor" format="reference|color" />
-        <attr name="quoteBackground" format="reference|color" />
-        <attr name="quoteBackgroundAlpha" format="reference|fraction" />
-        <attr name="quoteColor" format="reference|color" />
-        <attr name="quoteMargin" format="reference|dimension" />
-        <attr name="quotePadding" format="reference|dimension" />
-        <attr name="quoteWidth" format="reference|dimension" />
-        <attr name="textColor" format="reference|color" />
-        <attr name="textColorHint" format="reference|color" />
+        <attr name="azt_backgroundColor" format="reference|color" />
+        <attr name="azt_blockVerticalPadding" format="reference|dimension" />
+        <attr name="azt_bulletColor" format="reference|color" />
+        <attr name="azt_bulletMargin" format="reference|dimension" />
+        <attr name="azt_bulletPadding" format="reference|dimension" />
+        <attr name="azt_bulletWidth" format="reference|dimension" />
+        <attr name="azt_codeBackground" format="reference|color" />
+        <attr name="azt_codeBackgroundAlpha" format="reference|fraction" />
+        <attr name="azt_codeColor" format="reference|color" />
+        <attr name="azt_drawableFailed" format="reference" />
+        <attr name="azt_drawableLoading" format="reference" />
+        <attr name="azt_historyEnable" format="reference|boolean" />
+        <attr name="azt_commentsVisible" format="reference|boolean" />
+        <attr name="azt_historySize" format="reference|integer" />
+        <attr name="azt_lineSpacingExtra" format="reference|dimension" />
+        <attr name="azt_lineSpacingMultiplier" format="reference|float" />
+        <attr name="azt_linkColor" format="reference|color" />
+        <attr name="azt_linkUnderline" format="reference|boolean" />
+        <attr name="azt_preformatBackground" format="reference|color" />
+        <attr name="azt_preformatBackgroundAlpha" format="reference|fraction" />
+        <attr name="azt_preformatColor" format="reference|color" />
+        <attr name="azt_quoteBackground" format="reference|color" />
+        <attr name="azt_quoteBackgroundAlpha" format="reference|fraction" />
+        <attr name="azt_quoteColor" format="reference|color" />
+        <attr name="azt_quoteMargin" format="reference|dimension" />
+        <attr name="azt_quotePadding" format="reference|dimension" />
+        <attr name="azt_quoteWidth" format="reference|dimension" />
+        <attr name="azt_textColor" format="reference|color" />
+        <attr name="azt_textColorHint" format="reference|color" />
     </declare-styleable>
 
     <declare-styleable name="AztecToolbar">
-        <attr name="advanced" format="reference|boolean" />
-        <attr name="mediaToolbarAvailable" format="reference|boolean" />
+        <attr name="azt_advanced" format="reference|boolean" />
+        <attr name="azt_mediaToolbarAvailable" format="reference|boolean" />
     </declare-styleable>
 
     <declare-styleable name="SourceViewEditText">
-        <attr name="attributeColor" format="reference|color" />
-        <attr name="codeBackgroundColor" format="reference|color" />
-        <attr name="codeDialog" format="reference|boolean" />
-        <attr name="codeTextColor" format="reference|color" />
-        <attr name="tagColor" format="reference|color" />
+        <attr name="azt_attributeColor" format="reference|color" />
+        <attr name="azt_codeBackgroundColor" format="reference|color" />
+        <attr name="azt_codeDialog" format="reference|boolean" />
+        <attr name="azt_codeTextColor" format="reference|color" />
+        <attr name="azt_tagColor" format="reference|color" />
     </declare-styleable>
 
 </resources>
