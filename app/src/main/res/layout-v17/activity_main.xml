@@ -37,8 +37,8 @@
                 android:scrollbars="vertical"
                 android:imeOptions="flagNoExtractUi"
                 android:fontFamily="serif"
-                aztec:historyEnable="true"
-                aztec:historySize="10"/>
+                aztec:azt_historyEnable="true"
+                aztec:azt_historySize="10"/>
 
             <org.wordpress.aztec.source.SourceViewEditText
                 android:id="@+id/source"
@@ -57,8 +57,8 @@
                 android:visibility="gone"
                 android:imeOptions="flagNoExtractUi"
                 android:fontFamily="monospace"
-                aztec:codeBackgroundColor="@android:color/transparent"
-                aztec:codeTextColor="@android:color/white"/>
+                aztec:azt_codeBackgroundColor="@android:color/transparent"
+                aztec:azt_codeTextColor="@android:color/white"/>
 
         </FrameLayout>
 
