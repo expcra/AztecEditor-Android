@@ -342,7 +342,7 @@ class InlineFormatter(editor: AztecText, val codeStyle: CodeStyle) : AztecFormat
             AztecTextFormat.FORMAT_STRONG -> return AztecStyleStrongSpan()
             AztecTextFormat.FORMAT_ITALIC -> return AztecStyleItalicSpan()
             AztecTextFormat.FORMAT_CITE -> return AztecStyleCiteSpan()
-            AztecTextFormat.FORMAT_STRIKETHROUGH -> return AztecStrikethroughSpan()
+            AztecTextFormat.FORMAT_STRIKETHROUGH -> return AztecStrikethroughSpan("strike")
             AztecTextFormat.FORMAT_UNDERLINE -> return AztecUnderlineSpan()
             AztecTextFormat.FORMAT_CODE -> return AztecCodeSpan(codeStyle)
             else -> return AztecStyleSpan(Typeface.NORMAL)
