@@ -106,7 +106,9 @@ repositories {
 ```
 ```gradle
 dependencies {
-    api ('com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.3.13')
+    implementation("com.github.expcra.AztecEditor-Android:aztec:v1.3.16", {
+        exclude group: 'com.github.bumptech.glide', module: 'glide'
+    })
 }
 ```
 
